@@ -35,3 +35,24 @@ const myFunction=function(){// its return shows function but is actually an obje
 
 console.log(typeof myObj);
 console.log(typeof userEmail);
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++
+//MEMORY
+//Stack(Primtive), Heap(Non-Primitive)
+ 
+let myinstaname="himanshee123"//stack
+let anotherName=myinstaname//stack
+anotherName="himyname"//stack
+
+console.log(myinstaname);//himanshee123
+console.log(anotherName);//himyname
+
+let userOne={//stack=>userOne
+    email:"fgf@google.com",//heap=>original also changes in this bcz its non-primitive
+    upi:"ghfgh565"//heap
+}
+let userTwo=userOne//stack
+
+userTwo.email="bgh@google.com"
+console.log(userOne.email);//bgh@google.com
+console.log(userTwo.email);//bgh@google.com
