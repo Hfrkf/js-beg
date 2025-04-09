@@ -3,7 +3,7 @@ const anycount=20
 
 //console.log(name+anycount+"Value"); => himanshee20 Value
 
-console.log(`Hello my name is ${name} my anycount is ${anycount}`);
+console.log(`Hello my name is ${name}  my anycount is ${anycount}`);
 
 const gameName=new String('cfvf-ef-28')
 console.log(gameName[0]);
