@@ -66,12 +66,13 @@ const {courseInstructor:instructor}=course
 //console.log(courseInstructor);
 console.log(instructor);
 
+
 //JSON values fromatting for api
-{
-    "name":"himanshee",
-    "coursename":"js"
-    "price":"free"
-}
+// {
+//     "name":"himanshee",
+//     "coursename":"js"
+//     "price":"free"
+// }
 
 [
     {},
