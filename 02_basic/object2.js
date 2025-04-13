@@ -51,8 +51,8 @@ console.log(tinderUser1);
 
 console.log(Object.keys(tinderUser1));
 console.log(Object.values(tinderUser1));
-console.log(Object.entries(tinderUser1));
-console.log(tinderUser1.hasOwnProperty('loggedIn'));
+console.log(Object.entries(tinderUser1));//all the possible entries given
+console.log(tinderUser1.hasOwnProperty('loggedIn'));//true
 
 
 //deconstructing
