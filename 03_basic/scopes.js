@@ -38,7 +38,22 @@ if(true){
     }
     //console.log(website);//gives an error 
 }
+console.log(username);//cant be accesed bcz not it is not in scope
 
+
+// ++++++++++++++++++++++++ interesting ++++++++++
+
+addone(6)//gives ans
+function addone(num){
+    return num+1
+}
+addone(7)
+
+addtwo(3)//gives an error bcz of hoisting method
+const addtwo=function(num){//function in a form of variable definition
+    return num+2
+}
+addtwo(3)
 
 
 
