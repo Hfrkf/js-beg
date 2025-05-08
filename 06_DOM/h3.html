@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color:#fff">
+    <ul class="language">
+        <li>language</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const li=document.createElement('li')
+        li.innerHTML=`${langName}`//while using this we need to traverse the whole part before qadding thus this is much tym taking for bigger projects
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("python")
+    addLanguage("java")
+    addLanguage("cpp")
+
+    function addoptiLanguage(langName){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName))//thats why we use this bcz it is much optimized as compared
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptiLanguage("python")
+    addoptiLanguage("java")
+    addoptiLanguage("cpp")
+
+
+    //edit
+    const secondLang= document.querySelector("li:nth-child(2)")
+    const newLi=document.createElement('li')
+    newLi.textContent="hello"
+    secondLang.replaceWith(newLi)
+
+    //edit
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML="<li>yoo</li>"
+
+    //remove
+    const lastLang=document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+</html>
