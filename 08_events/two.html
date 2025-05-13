@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascipt learning</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    setTimeout(function(){//isme yeh kaam sirf ek baar krta h after the callout tym which is 2sec here
+        console.log("himanshee");
+    },2000)//browser ke through milte h yeh hmme, API vgera
+
+    const sayHimu=function(){
+        console.log("himanshee")
+    }
+    const changeText=function(){
+        document.querySelector('h1').innerHTML="hello"
+    }
+    //setTimeout(sayHimu,2000)
+    const changed=setTimeout(changeText,2000)
+    
+    document.querySelector('#stop').addEventListener('click',function(){
+    clearTimeout(changed);
+        console.log("stopped");
+    })
+
+</script>
+</html>
